@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class RevArray {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);   // take the input from the for this we used Scanner class which comes under util package
+		int n=sc.nextInt();              // accept the n value from the user
+		int arr[]=new int[n];            // declared the array and pass the size as a value of n 
+		for(int i=0;i<arr.length;i++) {          // traversed the loop from 0 index to length of the array inside for loop 
+			arr[i]=sc.nextInt();             // stored the value of array inside the arr[i]
+		}
+		for(int i=arr.length-1;i>=0;i--) {            /* traversed the loop from length of the array to 0 index of array in reverse                                                            order inside for loop */
+			System.out.println(arr[i]);            // print the reverse value of array
+		}
+	}
+}
