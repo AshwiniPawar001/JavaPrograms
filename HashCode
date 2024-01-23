@@ -1,0 +1,26 @@
+package com.MyPractice;
+
+public class HashCode {
+
+	String name ;
+	int no;
+	HashCode(String name,int no){
+		this.name=name;
+		this.no=no;
+	}
+	public String toString() {
+		return this.name;
+	}
+	public int hashCode() {
+		return this.no;
+	}
+	
+	public static void main(String[] args) {
+		HashCode hc=new HashCode("nn",10);
+		System.out.println(hc);
+		System.out.println(hc.hashCode());
+		System.out.println(Integer.toHexString(hc.hashCode()));
+
+	}
+
+}
